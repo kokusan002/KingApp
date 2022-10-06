@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59E734B128F068A100C82DDE /* 三角矢印（左）.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E734B028F068A100C82DDE /* 三角矢印（左）.png */; };
+		59E734B328F068AA00C82DDE /* 三角矢印（右）.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E734B228F068AA00C82DDE /* 三角矢印（右）.png */; };
+		59E734B728F069DD00C82DDE /* MemberSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E734B628F069DD00C82DDE /* MemberSettingViewController.swift */; };
 		8BD84C2E28EF0953009BDC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD84C2D28EF0953009BDC8F /* AppDelegate.swift */; };
 		8BD84C3028EF0953009BDC8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD84C2F28EF0953009BDC8F /* SceneDelegate.swift */; };
-		8BD84C3228EF0953009BDC8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD84C3128EF0953009BDC8F /* ViewController.swift */; };
 		8BD84C3528EF0953009BDC8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD84C3328EF0953009BDC8F /* Main.storyboard */; };
 		8BD84C3828EF0953009BDC8F /* KingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BD84C3628EF0953009BDC8F /* KingApp.xcdatamodeld */; };
 		8BD84C3A28EF0954009BDC8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD84C3928EF0954009BDC8F /* Assets.xcassets */; };
@@ -37,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59E734B028F068A100C82DDE /* 三角矢印（左）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角矢印（左）.png"; sourceTree = "<group>"; };
+		59E734B228F068AA00C82DDE /* 三角矢印（右）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角矢印（右）.png"; sourceTree = "<group>"; };
+		59E734B628F069DD00C82DDE /* MemberSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSettingViewController.swift; sourceTree = "<group>"; };
 		8BD84C2A28EF0953009BDC8F /* KingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD84C2D28EF0953009BDC8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD84C2F28EF0953009BDC8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BD84C3128EF0953009BDC8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BD84C3428EF0953009BDC8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BD84C3728EF0953009BDC8F /* KingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KingApp.xcdatamodel; sourceTree = "<group>"; };
 		8BD84C3928EF0954009BDC8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,8 +107,10 @@
 			children = (
 				8BD84C2D28EF0953009BDC8F /* AppDelegate.swift */,
 				8BD84C2F28EF0953009BDC8F /* SceneDelegate.swift */,
-				8BD84C3128EF0953009BDC8F /* ViewController.swift */,
 				8BD84C3328EF0953009BDC8F /* Main.storyboard */,
+				59E734B628F069DD00C82DDE /* MemberSettingViewController.swift */,
+				59E734B028F068A100C82DDE /* 三角矢印（左）.png */,
+				59E734B228F068AA00C82DDE /* 三角矢印（右）.png */,
 				8BD84C3928EF0954009BDC8F /* Assets.xcassets */,
 				8BD84C3B28EF0954009BDC8F /* LaunchScreen.storyboard */,
 				8BD84C3E28EF0954009BDC8F /* Info.plist */,
@@ -236,7 +242,9 @@
 			files = (
 				8BD84C3D28EF0954009BDC8F /* LaunchScreen.storyboard in Resources */,
 				8BD84C3A28EF0954009BDC8F /* Assets.xcassets in Resources */,
+				59E734B128F068A100C82DDE /* 三角矢印（左）.png in Resources */,
 				8BD84C3528EF0953009BDC8F /* Main.storyboard in Resources */,
+				59E734B328F068AA00C82DDE /* 三角矢印（右）.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD84C3228EF0953009BDC8F /* ViewController.swift in Sources */,
 				8BD84C2E28EF0953009BDC8F /* AppDelegate.swift in Sources */,
 				8BD84C3828EF0953009BDC8F /* KingApp.xcdatamodeld in Sources */,
 				8BD84C3028EF0953009BDC8F /* SceneDelegate.swift in Sources */,
+				59E734B728F069DD00C82DDE /* MemberSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
