@@ -28,6 +28,15 @@ class MemberSettingViewController: UIViewController {
     @IBOutlet weak var TF9: UITextField!
     @IBOutlet weak var TF10: UITextField!
     
+    @IBAction func TF1(_ sender: UITextField) {
+        TF1.text = sender.text
+    }
+    @IBAction func TF2(_ sender: UITextField) {
+        TF2.text = sender.text
+    }
+    @IBAction func TF3(_ sender: UITextField) {
+        TF3.text = sender.text
+    }
     @IBAction func TF4(_ sender: UITextField) {
         TF4.text = sender.text
     }
@@ -54,22 +63,37 @@ class MemberSettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        numLbl.text = "\(num)"
+        textField()
+        setName()
     }
     
     @IBAction func backBtnAct(_ sender: UIButton) {
-        
+        self.presentingViewController?.dismiss(animated: true)
     }
     
     @IBAction func leftBtnAct(_ sender: UIButton) {
         num -= 1
+        textField()
     }
     
     @IBAction func rightBtnAct(_ sender: UIButton) {
         num += 1
+        textField()
     }
     
     @IBAction func startBtnAct(_ sender: UIButton) {
+        playerNames[0] = TF1.text! as String
+        playerNames[1] = TF2.text! as String
+        playerNames[2] = TF3.text! as String
+        playerNames[3] = TF4.text! as String
+        playerNames[4] = TF5.text! as String
+        playerNames[5] = TF6.text! as String
+        playerNames[6] = TF7.text! as String
+        playerNames[7] = TF8.text! as String
+        playerNames[8] = TF9.text! as String
+        playerNames[9] = TF10.text! as String
+        def.set(playerNames, forKey: "PlayerNames")
+        def.set(num, forKey: "num")
     }
     
     func textField(){
@@ -80,6 +104,45 @@ class MemberSettingViewController: UIViewController {
         } else {
             leftBtnLbl.isHidden = false
             rightBtnLbl.isHidden = false
+        }
+        switch num {
+        case 3:
+            isHiddenTF(n: 2)
+            break
+        case 4:
+            isHiddenTF(n: 3)
+            break
+        case 5:
+            isHiddenTF(n: 4)
+            break
+        case 6:
+            isHiddenTF(n: 5)
+            break
+        case 7:
+            isHiddenTF(n: 6)
+            break
+        case 8:
+            isHiddenTF(n: 7)
+            break
+        case 9:
+            isHiddenTF(n: 8)
+            break
+        case 10:
+            isHiddenTF(n: 9)
+            break
+        default:
+            break
+        }
+        numLbl.text = "\(num)"
+    }
+    
+    func isHiddenTF(n:Int) {
+        for i in 0..<10{
+            if(i > n){
+                allTF[i].isHidden = true
+            } else {
+                allTF[i].isHidden = false
+            }
         }
     }
     
@@ -93,7 +156,7 @@ class MemberSettingViewController: UIViewController {
         TF7.text = playerNames[6]
         TF8.text = playerNames[7]
         TF9.text = playerNames[8]
-        TF9.text = playerNames[9]
+        TF10.text = playerNames[9]
     }
 
 }
